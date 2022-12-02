@@ -166,7 +166,8 @@ em {
   padding: 18px;
   font-size: 18px;
   font-weight: bolder;
-  background-color: none;
+  background-color: whitesomke;
+  color: #000;
   border: none;
   outline: none;
 }
