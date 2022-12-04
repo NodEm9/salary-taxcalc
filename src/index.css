@@ -24,7 +24,8 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 2.2em;
   line-height: 1.1;
 }
@@ -40,9 +41,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -52,7 +55,6 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #ffffff;
-   
   }
 
   body {
