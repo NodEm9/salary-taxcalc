@@ -1,12 +1,9 @@
-import React from 'react';
-import taxpayImg from '../../images/tax-payment-1.jpg';
-// import nodeBey from '../../images/NODBEYLOGO.jpg'
+import React from "react";
+import taxpayImg from "../../images/tax-payment-1.jpg";
 
 function ImageOne() {
-    const img = taxpayImg;
-    // const img = nodeBey;  
+  const img = taxpayImg;
+  return <img className="img-one" src={img} alt="Header tax man"></img>;
+}
 
-    return (<img className='img-one' src={img} alt='Header tax man'></img>)
- }
- 
- export default ImageOne
+export default ImageOne;
