@@ -1,11 +1,14 @@
+import React from 'react';
 import Tax from './component/tax'
+import { ThemeContext, themes } from '../ThemeContext/theme-context';
+import { ThemedButton } from '../ThemeContext/theme-button';
 import Image from './component/image/header-image';
 import './App.css'
 
 
 function App() {
-  return (
-    <div className="App">
+  return (    
+    <div className='App'>
       <header className="App-header">
         <div className="imgDiv">
           <Image />
@@ -17,6 +20,7 @@ function App() {
       </div>
     </div>
   );
+
 }
 
 export default App

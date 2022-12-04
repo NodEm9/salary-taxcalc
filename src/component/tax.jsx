@@ -1,5 +1,6 @@
 import React from "react";
 import TaxInput from "./tax-calc";
+import { ThemeContext } from "../../ThemeContext/theme-context";
     
 class Tax extends React.Component {
   constructor(props) {

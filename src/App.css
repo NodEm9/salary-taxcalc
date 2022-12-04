@@ -1,56 +1,18 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .App {
   text-align: center;
-  font-size: 1rem;  
-  margin: 0;
+  font-size: 1rem; 
   padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-image: none;
+  min-height: auto;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.App .App-header .form{
-  width: 100%;
 }
 
 .App-header { 
   min-height: 10vh;
   display: flex;
   flex-wrap: nowrap;
-  border-radius: 0px;
-  border-top-left-radius: 0px; 
-  border-top-right-radius: 0px;
   padding: 5px;
-  margin: 0px 0px 0px 0px;
-  margin-top: 0px;
-  align-items: initial;
-  justify-content: flex-start;
   font-size: calc(2px + 1vmin);
-  color: rgb(15, 15, 13);
-  box-shadow: 0px 0px 6px 0px grey;
-  }
-
-  /* h1 {
-    color: rgb(7, 7, 7);
-    margin-top: 5px;
-    font-size: 16px;
-  } */
-
-  .bg-gradient {
-    position: relative;
-    z-index: -1;
-    background-image: linear-gradient(
-      rgba(245, 166, 166, 0.7),
-      rgba(25, 233, 216, 0.5)
-    );
-    transform: translate(100%, 100%);
+  border-bottom: 1px solid grey;
   }
 
   .imgDIv,  .img{
@@ -65,27 +27,21 @@
     border-right: 5px solid #ffff00;
   }
   
-  .img {
-    flex: 3;
-  }
-  
   .img-one {
     display: none;
-    border-right: 5px solid #ffff00;
   }
 
 .form {
   display: flex;
   flex-direction: column;
-  min-height: 60vh;
-  padding: 8px;
+  min-height: auto;
+  padding: 2px;
   background-image: linear-gradient(
     rgba(19, 119, 250, 0.8),
      rgba(238, 231, 231, 0.7));
-  margin: 30px 6px 0px 6px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
-  border-top: 3px solid green;
+  margin-top: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .form, input, .btn, ul, li {
@@ -113,7 +69,7 @@ ul, li{
   list-style: none;
   align-items: left;
   justify-content:  baseline;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   justify-content: space-between;
   background-color: azure;
   padding: 5px;
@@ -138,7 +94,8 @@ li:has(span) {
 }
 
 .netIncome {
-  font-size: smaller;
+  font-size: calc(12px + 1vmin);
+  color: rgb(12, 12, 12);
 }
 
 .deductions {
@@ -147,40 +104,38 @@ li:has(span) {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: calc(18px + 1vmin);
+  color: rgb(3, 3, 3);
 }
 
 .tax-name {
   color: #000;
   font-weight: 400;
+  font-size: calc(10px, 1vmin);
 }
 
-em {
-  font-size: 18px;
+.help-word {
+  margin-top: -40px;
+  font-size: calc(11px + 1.5vmin);
+  color: rgb(10, 10, 10);
 }
 
 .input1{
-  max-width: 90%;
-  height: 30px;
-  margin: 16px;
+  width: 70%;
+  height: 10px;
+  margin: 50px;
   padding: 18px;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bolder;
-  background-color: whitesmoke;
   border: none;
   outline: none;
 }
 
 .btn {
-  width: 16em;
-  margin: auto;
-  margin-top: 16px;
-  padding: 1em;
-  border-radius: 1.5em;
-  border: none;
-  background-color: #a1cdf1;
+  width: 10em;
+  margin: 16px;
   font-size: 20px;
-  color: rgb(22, 21, 21);
+  color: rgb(10, 10, 10);
   font-weight: bold;
 }
 
@@ -190,45 +145,26 @@ em {
 }
 
 @media screen and (min-width: 40em) {
-  .App {
+  #root {
+    margin: 0 auto;
+  }
+
+   .App {
     text-align: center;
     font-size: 1rem; 
-    margin: 0;
     padding: 0px;
-    min-height: auto;
   }
-  
+
   .App-header {
-    margin: 0px 0px 10px 0px;
-    background-color: #f2f5fa;
     min-height: 0px;
+    width: 60vw;
     display: flex;
-    flex-wrap: wrap;
-    border-radius: 0px;
-    border-top-left-radius: 0px; 
-    border-top-right-radius: 0px;
-    padding-left: 15px;
-    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
     font-size: calc(2px + 1vmin);
-    color: rgb(15, 15, 13);
-    box-shadow: 0px 0px 6px 6px grey;
+    box-shadow: 0px 0px 0px 6px grey;
     }
-
-    /* h1 {
-      margin-top: -4px;
-      font-size: 17px;
-    } */
-
-    /* .bg-gradient {
-      position: relative;
-      z-index: -1;
-      background-image: linear-gradient(
-        rgba(245, 166, 166, 0.7),
-        rgba(25, 233, 216, 0.5)
-      );
-      transform: translate(-100%, 100%);
-    } */
 
     .imgDIv,  .img{
       max-width: 100px;
@@ -236,8 +172,8 @@ em {
       border-radius: 5px;
     }
 
-    .module-form .form {
-      width: 80vw;
+    .module-form {
+      width: 60vw;
     }
 
     .main {
@@ -250,37 +186,46 @@ em {
   .form {
     display: grid;
     grid-template-columns: 30% 70%;
-    margin: 0 auto;
-    padding: 5px;
-    background-image: linear-gradient(
+    width: 100%;
+    background-image: 
+    linear-gradient(
       rgba(19, 119, 250, 0.8),
        rgba(238, 231, 231, 0.7));
     margin-top: 35px;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
   }
   
-  .form, input, .btn {
-    width: 40%;
+  input, .btn {
+    width: 10%;
   }
+
   .form, .side-img, .img-one {
     height: 100%;
   }
 
+  .help-word {
+    margin-top: 10px;
+    font-size: calc(11px + 1.1vmin);
+    color: rgb(10, 10, 10);
+  }
+
+
   .side-img .img-one{
-    width: 100%;
+    margin: 0;
     padding: 0;
-    border-top-left-radius: 25px;
     margin-bottom: 0;
+    margin-top: -2px;
+     margin-left: -5px;
+
   }
 
   .img-one {
+    width: 100%;
+    position: relative;
     display: block;
-    margin-top: -5px;
-    margin-left: -6px;
+    border-top-left-radius: 15px; 
   }
   
-input, .btn {
+  input, .btn {
     width: 80%;
     margin: 5px;
   }
@@ -291,12 +236,8 @@ input, .btn {
   }
 
   .btn {
-    width: 21rem;
-    margin: auto;
-    padding: 1em;
-    border-radius: 1.5em;
-    border: none;
-    background-color: #a1cdf1;
+    max-width: 21rem;
+    margin: 16px;
     font-size: 20px;
     color: rgb(20, 17, 17);
     font-weight: bold;
@@ -314,8 +255,6 @@ input, .btn {
   ul{
     margin: 50px;
     margin-top: 5px;
-    /* background: transparent; */
-
   }
 
   li:has(span) {

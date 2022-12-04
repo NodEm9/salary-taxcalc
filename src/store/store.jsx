@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-// import ImageOne from "../component/image/side-img";
+import { ThemeContext } from "../../ThemeContext/theme-context";
 
 function TaxData() {
   const [grossIncome, setGrossIncome] = useState("");
@@ -98,7 +98,7 @@ function TaxData() {
           <h3>BruttoEinkommen</h3>
           {
               <li className="li" key={list}>
-                <span className="pre tax-name">BruttoEinkommen </span>
+                <span className="pre tax-name">Bruttoeinkommen </span>
                 <span className="net-income">{grossIncome} €</span>
               </li>
             }
@@ -145,7 +145,7 @@ function TaxData() {
                 <span className=" deductions">-{calculatedTaxes} €</span>
               </li>
             }
-            <h3 className="netIncome">hier bist du bei Nettoeinkommen nach aller <em>Abzüge</em></h3>
+            <h3 className="netIncome">Nettoeinkommen nach alle <em>Abzüge</em></h3>
             {
               <li className="li ">
                 <span className="pre tax-name">Nettoeinkommen </span>
@@ -161,16 +161,16 @@ function TaxData() {
   return (
     <div>
       <div className="main">
-      <input
-        className="input1"
-        placeholder="Enter Gross Income"
-        value={grossIncome}
-        onChange={(e) => setGrossIncome(e.target.value)}
-      />
-      <em>Check taxes on a specific wage.</em>
-      <button className="btn" onClick={() => setTax(FuncList)}>
-        Get Tax
-      </button>
+          <input
+            className="input1"
+            placeholder="Enter Gross Income"
+            value={grossIncome}
+            onChange={(e) => setGrossIncome(e.target.value)}
+          />
+          <em className="help-word">Check taxes on a specific wage.</em>
+          <button className="btn" onClick={() => setTax(FuncList)}>
+            Get Tax
+          </button>
       </div>
       <div> {tax}</div>
     </div>
