@@ -141,8 +141,6 @@ h3 {
 .btn {
   width: 10em;
   margin: 16px;
-  font-size: 20px;
-  color: rgb(10, 10, 10);
   font-weight: bold;
 }
 
@@ -248,8 +246,6 @@ h3 {
   .btn {
     max-width: 21rem;
     margin: 16px;
-    font-size: 20px;
-    color: rgb(20, 17, 17);
     font-weight: bold;
   }
 
