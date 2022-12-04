@@ -135,7 +135,7 @@ h3 {
   font-size: 12px;
   font-weight: bolder;
   border: none;
-  outline: none;
+  outline-color: rosybrown;
 }
 
 .btn {
