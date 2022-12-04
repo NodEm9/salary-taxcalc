@@ -1,26 +1,26 @@
 import React from 'react';
 import Tax from './component/tax'
-import { ThemeContext, themes } from '../ThemeContext/theme-context';
-import { ThemedButton } from '../ThemeContext/theme-button';
 import Image from './component/image/header-image';
 import './App.css'
 
 
 function App() {
-  return (    
+  return (
     <div className='App'>
       <header className="App-header">
         <div className="imgDiv">
           <Image />
         </div>
-        <h1>Einkommensteuer rechner / Tax Calculator for Monthly Salary Income. </h1>
+        <div>
+          <h1>Einkommensteuer rechner <b>|</b></h1>
+          <h2>Salary income Tax calculator . </h2>
+        </div>
       </header>
       <div className="module-form">
         <Tax />
       </div>
     </div>
   );
-
 }
 
 export default App
