@@ -1,35 +1,36 @@
 .App {
   text-align: center;
-  font-size: 1rem; 
+  font-size: 1rem;
   padding: 0;
   min-height: auto;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.App-header { 
+.App-header {
   min-height: 10vh;
   display: flex;
   flex-wrap: nowrap;
   padding: 5px;
   font-size: calc(2px + 1vmin);
   border-bottom: 1px solid grey;
-  }
+}
 
-  .imgDIv,  .img{
-    position: relative;
-    display: flex;
-    left: 0;
-    top: 0;
-    max-width: 50%;
-    padding: 0;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-right: 5px solid #ffff00;
-  }
-  
-  .img-one {
-    display: none;
-  }
+.imgDIv,
+.img {
+  position: relative;
+  display: flex;
+  left: 0;
+  top: 0;
+  max-width: 50%;
+  padding: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right: 5px solid #ffff00;
+}
+
+.img-one {
+  display: none;
+}
 
 .form {
   display: flex;
@@ -38,13 +39,18 @@
   padding: 2px;
   background-image: linear-gradient(
     rgba(19, 119, 250, 0.8),
-     rgba(238, 231, 231, 0.7));
+    rgba(238, 231, 231, 0.7)
+  );
   margin-top: 30px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-.form, input, .btn, ul, li {
+.form,
+input,
+.btn,
+ul,
+li {
   max-width: 100%;
 }
 
@@ -55,7 +61,8 @@
   justify-content: space-around;
 }
 
-ul, li{
+ul,
+li {
   flex: 3;
   margin-left: 10px;
   padding: 1px;
@@ -68,7 +75,7 @@ ul, li{
   margin-left: 0;
   list-style: none;
   align-items: left;
-  justify-content:  baseline;
+  justify-content: baseline;
   font-size: 1.2em;
   justify-content: space-between;
   background-color: azure;
@@ -83,7 +90,7 @@ li:has(span) {
   font-weight: bold;
 }
 
-.pre{
+.pre {
   color: red;
   font-weight: 800;
   font-size: 0.8em;
@@ -120,7 +127,7 @@ h3 {
   color: rgb(10, 10, 10);
 }
 
-.input1{
+.input1 {
   width: 70%;
   height: 10px;
   margin: 50px;
@@ -149,56 +156,60 @@ h3 {
     margin: 0 auto;
   }
 
-   .App {
+  .App {
     text-align: center;
-    font-size: 1rem; 
+    font-size: 1rem;
     padding: 0px;
   }
 
   .App-header {
-    min-height: 0px;
+    min-height: 30px;
     width: 60vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 15px;
+    margin-top: 25px;
     font-size: calc(2px + 1vmin);
     box-shadow: 0px 0px 0px 6px grey;
-    }
+  }
 
-    .imgDIv,  .img{
-      max-width: 100px;
-      margin-top: 5px;
-      border-radius: 5px;
-    }
+  .imgDIv,
+  .img {
+    max-width: 100px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
 
-    .module-form {
-      width: 60vw;
-    }
+  .module-form {
+    width: 60vw;
+  }
 
-    .main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-    }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 
   .form {
     display: grid;
     grid-template-columns: 30% 70%;
     width: 100%;
-    background-image: 
-    linear-gradient(
+    background-image: linear-gradient(
       rgba(19, 119, 250, 0.8),
-       rgba(238, 231, 231, 0.7));
+      rgba(238, 231, 231, 0.7)
+    );
     margin-top: 35px;
   }
-  
-  input, .btn {
+
+  input,
+  .btn {
     width: 10%;
   }
 
-  .form, .side-img, .img-one {
+  .form,
+  .side-img,
+  .img-one {
     height: 100%;
   }
 
@@ -208,29 +219,28 @@ h3 {
     color: rgb(10, 10, 10);
   }
 
-
-  .side-img .img-one{
+  .side-img .img-one {
     margin: 0;
     padding: 0;
     margin-bottom: 0;
     margin-top: -2px;
-     margin-left: -5px;
-
+    margin-left: -5px;
   }
 
   .img-one {
     width: 100%;
     position: relative;
     display: block;
-    border-top-left-radius: 15px; 
+    border-top-left-radius: 15px;
   }
-  
-  input, .btn {
+
+  input,
+  .btn {
     width: 80%;
     margin: 5px;
   }
-  
-  .input1{
+
+  .input1 {
     margin: 20px;
     padding: 16px;
   }
@@ -242,7 +252,7 @@ h3 {
     color: rgb(20, 17, 17);
     font-weight: bold;
   }
-  
+
   .li {
     width: 50vw;
     margin: 0 auto;
@@ -252,7 +262,7 @@ h3 {
     background-color: azure;
   }
 
-  ul{
+  ul {
     margin: 50px;
     margin-top: 5px;
   }
@@ -267,4 +277,3 @@ h3 {
     border-bottom: 2px solid;
   }
 }
-
