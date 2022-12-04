@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-// import ImageOne from "../component/image/side-img";
+
 
 function TaxData() {
   const [grossIncome, setGrossIncome] = useState("");
@@ -31,32 +31,29 @@ function TaxData() {
   const taxWorkings3 = useMemo(() => {
     const _htInsure = 0.079 * 100;
     const _tax = _htInsure * _amount;
-    const newResult = setHtInsurance(parseFloat(_tax.toPrecision(5)));
-    let htIns = newResult;
-    return htIns;
+    const _htIns = setHtInsurance(parseFloat(_tax.toPrecision(5)));
+    return _htIns;
   }, [_amount]);
 
   const taxWorkings4 = useMemo(() => {
     const _unEmp = 0.012 * 100;
     const _tax = _unEmp * _amount;
-    const newTax = setUnTax(parseFloat(_tax.toPrecision(5)));
-    let unEmploy = newTax;
-    return unEmploy;
+    const _unEmploy = setUnTax(parseFloat(_tax.toPrecision(5)));
+    return _unEmploy;
   }, [_amount]);
 
   const taxWorkings5 = useMemo(() => {
     const _chuTax = 0.009196 * 100;
     const _tax = _chuTax * _amount;
-    const newR = setChTax(parseFloat(_tax.toPrecision(5)));
-    let chrTax = newR;
-    return chrTax;
+    const _chrTax = setChTax(parseFloat(_tax.toPrecision(5)));
+    return _chrTax;
   }, [_amount]);
 
   const taxWorkings6 = useMemo(() => {
     const _caInsure = 0.01875 * 100;
     const _tax = _caInsure * _amount;
-    let caInsure = setcaInsurance(parseFloat(_tax.toPrecision(5)));
-    return caInsure;
+    let _caIns = setcaInsurance(parseFloat(_tax.toPrecision(5)));
+    return _caIns;
   }, [_amount]);
 
   const store = useMemo(() => {
@@ -77,16 +74,17 @@ function TaxData() {
     taxWorkings6,
   ]); // returns void
 
-  const calculatedTaxes = 
-  parseFloat(
-    incomeTax + 
-    pensionTax + 
-    htInsurance + 
-    unTax + 
-    chTax + 
-    caInsurance
-  ).toPrecision(6);
-  //Calculate 
+  const calculatedTaxes =
+    parseFloat(
+      incomeTax +
+      pensionTax +
+      htInsurance +
+      unTax +
+      chTax +
+      caInsurance
+    ).toPrecision(6);
+
+  //Calculate net income
   const netIncomeDerived = parseFloat(grossIncome - calculatedTaxes).toPrecision(6);
 
   function FuncList() {
@@ -95,10 +93,10 @@ function TaxData() {
       return (
         <ul>
           <div>
-          <h3>BruttoEinkommen</h3>
-          {
+            <h3>BruttoEinkommen</h3>
+            {
               <li className="li" key={list}>
-                <span className="pre tax-name">BruttoEinkommen </span>
+                <span className="pre tax-name">Bruttoeinkommen </span>
                 <span className="net-income">{grossIncome} €</span>
               </li>
             }
@@ -139,17 +137,17 @@ function TaxData() {
                 <span className="deductions">{caInsurance} €</span>
               </li>
             }
-            { 
+            {
               <li className="li">
                 <span className="pre tax-name">Gesamtbeitrag </span>
                 <span className=" deductions">-{calculatedTaxes} €</span>
               </li>
             }
-            <h3 className="netIncome">hier bist du bei Nettoeinkommen nach aller <em>Abzüge</em></h3>
+            <h3 className="netIncome">Nettoeinkommen nach alle <em>Abzüge</em></h3>
             {
               <li className="li ">
                 <span className="pre tax-name">Nettoeinkommen </span>
-               <span className="net-income">{netIncomeDerived} €</span>
+                <span className="net-income">{netIncomeDerived} €</span>
               </li>
             }
           </div>
@@ -161,16 +159,16 @@ function TaxData() {
   return (
     <div>
       <div className="main">
-      <input
-        className="input1"
-        placeholder="Enter Gross Income"
-        value={grossIncome}
-        onChange={(e) => setGrossIncome(e.target.value)}
-      />
-      <em>Check taxes on a specific wage.</em>
-      <button className="btn" onClick={() => setTax(FuncList)}>
-        Get Tax
-      </button>
+        <input
+          className="input1"
+          placeholder="Enter Gross Income"
+          value={grossIncome}
+          onChange={(e) => setGrossIncome(e.target.value)}
+        />
+        <em className="help-word">Check taxes on a specific wage.</em>
+        <button className="btn" onClick={() => setTax(FuncList)}>
+          Get Tax
+        </button>
       </div>
       <div> {tax}</div>
     </div>
